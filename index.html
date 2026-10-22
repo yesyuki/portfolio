@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>Yusuf Aiva Yuki — Cloud Engineering Portfolio</title>
+  <meta name="description" content="Portfolio of Yusuf Aiva Yuki, an S1 Computer Engineering student at Telkom University interested in cloud engineering, virtualization, networking, and home automation.">
+  <meta name="author" content="Yusuf Aiva Yuki">
+  <meta name="theme-color" content="#0b0f14">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yusuf Aiva Yuki — Cloud Engineering Enthusiast">
+  <meta property="og:description" content="Home lab, OpenWrt networking, Frigate NVR, ESPHome automation, and hardware projects from an S1 Computer Engineering student at Telkom University.">
+  <meta property="og:site_name" content="Yusuf Aiva Yuki — Portfolio">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0f14'/%3E%3Cpath d='M9 11l4 5-4 5M17 21h6' fill='none' stroke='%237ee787' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="#top" aria-label="Yusuf Aiva Yuki — back to top">
+        <span class="brand__prompt" aria-hidden="true">~/</span><span class="brand__name">portfolio</span><span class="brand__cursor" aria-hidden="true">_</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+        <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+        </svg>
+        <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="eyebrow__sign" aria-hidden="true">$</span> whoami</p>
+          <h1 id="hero-title">Yusuf Aiva Yuki</h1>
+
+          <p class="hero__headline">
+            Cloud Engineering Enthusiast
+            <span class="hero__sep" aria-hidden="true">|</span>
+            Active S1 Computer Engineering Student at Telkom University
+            <span class="hero__sep" aria-hidden="true">|</span>
+            Passionate about Virtualization, Networking &amp; Home Automation
+          </p>
+
+          <p class="hero__goal"><span class="hero__goal-label" aria-hidden="true">//</span> Goal: build a career as a cloud engineer, focused on infrastructure, networking, and automation.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--ghost" href="https://github.com/yesyuki/" target="_blank" rel="noopener noreferrer">GitHub →</a>
+            <a class="btn btn--ghost" href="https://linkedin.com/in/yusufaivayuki/" target="_blank" rel="noopener noreferrer">LinkedIn →</a>
+            <a class="btn btn--primary" href="#contact">Contact <span aria-hidden="true">→</span></a>
+          </div>
+
+          <p class="hero__meta">
+            <span>S1 Computer Engineering</span>
+            <span class="dot" aria-hidden="true">·</span>
+            <span>Telkom University</span>
+            <span class="dot" aria-hidden="true">·</span>
+            <span>[2026 - present]</span>
+          </p>
+        </div>
+
+        <aside class="terminal" aria-label="Home lab stack">
+          <div class="terminal__bar" aria-hidden="true">
+            <span class="terminal__dot"></span>
+            <span class="terminal__dot"></span>
+            <span class="terminal__dot"></span>
+            <span class="terminal__title">~/home-lab</span>
+          </div>
+          <pre class="terminal__body"><code><span class="t-prompt">$</span> stack --list
+<span class="t-key">proxmox</span>   virtualization
+<span class="t-key">openwrt</span>   home networking
+<span class="t-key">frigate</span>   NVR + detection
+<span class="t-key">esphome</span>   YAML device configs
+<span class="t-key">ifttt</span>     remote light switch
+<span class="t-key">speaker</span>   DIY Bluetooth build
+<span class="t-prompt">$</span> <span class="t-cursor" aria-hidden="true">_</span></code></pre>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <span class="section__index" aria-hidden="true">01</span>
+          <div>
+            <h2 id="about-title">About</h2>
+            <p class="section__lead">Where the interest started, and where it is going.</p>
+          </div>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__body reveal">
+            <p>I'm passionate about cloud engineering and how technology can make systems more reliable, automated, and accessible. My interest started at home, where I built my own home lab. Through these projects I learned to troubleshoot independently, read documentation, and keep experimenting until things work. I'm currently strengthening my foundation in Linux and exploring [DOCKER / AWS / GCP]. My goal is to build a career as a cloud engineer.</p>
+          </div>
+
+          <aside class="focus-card reveal" aria-labelledby="focus-title">
+            <h3 class="focus-card__title" id="focus-title"><span aria-hidden="true">// </span>focus</h3>
+            <ul class="focus-list">
+              <li>Infrastructure</li>
+              <li>Networking</li>
+              <li>Automation</li>
+            </ul>
+            <p class="focus-card__note">Working toward a career as a cloud engineer.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <span class="section__index" aria-hidden="true">02</span>
+          <div>
+            <h2 id="skills-title">Skills</h2>
+            <p class="section__lead">Self-assessed levels, built from hands-on projects.</p>
+          </div>
+        </div>
+
+        <div class="skills__grid">
+          <section class="skill-group reveal" aria-labelledby="skill-systems">
+            <h3 id="skill-systems">Systems</h3>
+            <ul class="skill-list">
+              <li class="skill">
+                <div class="skill__top">
+                  <span class="skill__name">Linux basics</span>
+                  <span class="badge badge--beginner">Beginner</span>
+                </div>
+                <p class="skill__detail">terminal, permissions, SSH</p>
+              </li>
+              <li class="skill">
+                <div class="skill__top">
+                  <span class="skill__name">Frigate</span>
+                  <span class="badge badge--mid">Beginner–Intermediate</span>
+                </div>
+                <p class="skill__detail">home NVR with object detection</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="skill-group reveal" aria-labelledby="skill-networking">
+            <h3 id="skill-networking">Networking</h3>
+            <ul class="skill-list">
+              <li class="skill">
+                <div class="skill__top">
+                  <span class="skill__name">OpenWrt</span>
+                  <span class="badge badge--mid">Beginner–Intermediate</span>
+                </div>
+                <p class="skill__detail">home network and device connectivity</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="skill-group reveal" aria-labelledby="skill-virtualization">
+            <h3 id="skill-virtualization">Virtualization</h3>
+            <ul class="skill-list">
+              <li class="skill">
+                <div class="skill__top">
+                  <span class="skill__name">Proxmox</span>
+                  <span class="badge badge--mid">Beginner–Intermediate</span>
+                </div>
+                <p class="skill__detail">virtualization and self-hosted services</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="skill-group reveal" aria-labelledby="skill-iot">
+            <h3 id="skill-iot">IoT &amp; Automation</h3>
+            <ul class="skill-list">
+              <li class="skill">
+                <div class="skill__top">
+                  <span class="skill__name">ESPHome</span>
+                  <span class="badge badge--intermediate">Intermediate</span>
+                </div>
+                <p class="skill__detail">YAML device configuration</p>
+              </li>
+              <li class="skill">
+                <div class="skill__top">
+                  <span class="skill__name">IFTTT</span>
+                  <span class="badge badge--beginner">Beginner</span>
+                </div>
+                <p class="skill__detail">remote light switch automation</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="skill-group reveal" aria-labelledby="skill-hardware">
+            <h3 id="skill-hardware">Hardware</h3>
+            <ul class="skill-list">
+              <li class="skill">
+                <div class="skill__top">
+                  <span class="skill__name">Basic electronics</span>
+                  <span class="badge badge--beginner">Beginner</span>
+                </div>
+                <p class="skill__detail">DIY audio hardware</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="learning reveal">
+          <h3 class="learning__title"><span class="learning__sign" aria-hidden="true">$</span> Currently learning</h3>
+          <ul class="tags">
+            <li class="tag tag--learning">[DOCKER, AWS/GCP]</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <span class="section__index" aria-hidden="true">03</span>
+          <div>
+            <h2 id="projects-title">Projects</h2>
+            <p class="section__lead">Hands-on projects from my home lab and home network.</p>
+          </div>
+        </div>
+
+        <div class="projects__grid">
+          <article class="card project reveal">
+            <div class="project__head">
+              <span class="project__num" aria-hidden="true">01</span>
+              <h3 class="project__title">Home Lab</h3>
+            </div>
+            <p class="project__desc">My home lab is built on Proxmox, which I use for virtualization and self-hosted services. It is one of the places where I learned to troubleshoot independently, read documentation, and keep experimenting until things work.</p>
+            <ul class="tags" aria-label="Technologies used in Home Lab">
+              <li class="tag">Proxmox</li>
+              <li class="tag">Virtualization</li>
+              <li class="tag">Self-hosted</li>
+            </ul>
+            <p class="project__todo">[ADD: what I configured / what I learned]</p>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project__head">
+              <span class="project__num" aria-hidden="true">02</span>
+              <h3 class="project__title">Home Network</h3>
+            </div>
+            <p class="project__desc">OpenWrt is configured for my home network and device connectivity. This is where I work with networking directly: configuring OpenWrt and checking that connected devices can reach what they need.</p>
+            <ul class="tags" aria-label="Technologies used in Home Network">
+              <li class="tag">OpenWrt</li>
+              <li class="tag">Networking</li>
+            </ul>
+            <p class="project__todo">[ADD: what I configured / what I learned]</p>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project__head">
+              <span class="project__num" aria-hidden="true">03</span>
+              <h3 class="project__title">CCTV NVR</h3>
+            </div>
+            <p class="project__desc">Frigate is my home NVR, with object detection enabled on the camera streams. I use it to understand how recording, detection, and a self-hosted service fit together.</p>
+            <ul class="tags" aria-label="Technologies used in CCTV NVR">
+              <li class="tag">Frigate</li>
+              <li class="tag">NVR</li>
+              <li class="tag">Object detection</li>
+            </ul>
+            <p class="project__todo">[ADD: what I configured / what I learned]</p>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project__head">
+              <span class="project__num" aria-hidden="true">04</span>
+              <h3 class="project__title">Smart Home Integration</h3>
+            </div>
+            <p class="project__desc">Devices from multiple brands are unified through ESPHome, using YAML configuration files. I write the YAML that defines each device's behavior, so the setup stays readable and repeatable.</p>
+            <ul class="tags" aria-label="Technologies used in Smart Home Integration">
+              <li class="tag">ESPHome</li>
+              <li class="tag">YAML</li>
+              <li class="tag">Smart home</li>
+            </ul>
+            <p class="project__todo">[ADD: what I configured / what I learned]</p>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project__head">
+              <span class="project__num" aria-hidden="true">05</span>
+              <h3 class="project__title">Remote Light Switch</h3>
+            </div>
+            <p class="project__desc">A remote-controlled light switch built using IFTTT. The project explores how a simple automation can control a light switch remotely.</p>
+            <ul class="tags" aria-label="Technologies used in Remote Light Switch">
+              <li class="tag">IFTTT</li>
+              <li class="tag">Automation</li>
+            </ul>
+            <p class="project__todo">[ADD: what I configured / what I learned]</p>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project__head">
+              <span class="project__num" aria-hidden="true">06</span>
+              <h3 class="project__title">DIY Bluetooth Speaker</h3>
+            </div>
+            <p class="project__desc">A DIY Bluetooth speaker built from a used car speaker, an amplifier, and a Bluetooth MP3 module. The build is a hands-on exercise in basic electronics and in reusing an existing part.</p>
+            <ul class="tags" aria-label="Technologies used in DIY Bluetooth Speaker">
+              <li class="tag">Bluetooth</li>
+              <li class="tag">Amplifier</li>
+              <li class="tag">Basic electronics</li>
+            </ul>
+            <p class="project__todo">[ADD: what I configured / what I learned]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <span class="section__index" aria-hidden="true">04</span>
+          <div>
+            <h2 id="contact-title">Contact</h2>
+            <p class="section__lead">Reach me through any of these channels.</p>
+          </div>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__intro reveal">
+            <p>Open to conversations about cloud engineering, networking, and home lab projects.</p>
+          </div>
+
+          <ul class="contact-list">
+            <li class="reveal">
+              <a class="contact-link" href="#" data-placeholder="[EMAIL]" aria-disabled="true">
+                <span class="contact-link__label">Email</span>
+                <span class="contact-link__value">hello@yuki.com</span>
+                <span class="contact-link__icon" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li class="reveal">
+              <a class="contact-link" href="https://www.instagram.com/thatprrsun/" target="_blank" rel="noopener noreferrer">
+                <span class="contact-link__label">Instagram</span>
+                <span class="contact-link__value">thatprrsun</span>
+                <span class="contact-link__icon" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li class="reveal">
+              <a class="contact-link" href="https://github.com/yesyuki/" target="_blank" rel="noopener noreferrer">
+                <span class="contact-link__label">GitHub</span>
+                <span class="contact-link__value">yesyuki</span>
+                <span class="contact-link__icon" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li class="reveal">
+              <a class="contact-link" href="https://linkedin.com/in/yusufaivayuki/" target="_blank" rel="noopener noreferrer">
+                <span class="contact-link__label">LinkedIn</span>
+                <span class="contact-link__value">yusufaivayuki</span>
+                <span class="contact-link__icon" aria-hidden="true">→</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>© <span id="year">2026</span> Yusuf Aiva Yuki</p>
+      <p>Built with HTML, CSS &amp; vanilla JavaScript.</p>
+    </div>
+  </footer>
+</body>
+</html>
